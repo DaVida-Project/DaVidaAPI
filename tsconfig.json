@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2022",
+    "esModuleInterop": true,
+    "strict": true,
+    "rootDir": "./src",
+    "outDir": "./build",
+    "sourceMap": true,
+    "inlineSources": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@api/*": ["./src/Api/*"],
+      "@app/*": ["./src/App/*"],
+      "@config/*": ["./src/Config/*"],
+      "@database/*": ["./src/Database/*"],
+      "@libs/*": ["./src/Libs/*"],
+      "@middlewares/*": ["./src/Middlewares/*"],
+      "@routes/*": ["./src/Routes/*"],
+      "@server/*": ["./src/Server/*"],
+      "@appTypes/*": ["./src/Types/*"],
+      "@utils/*": ["./src/Utils/*"]
+    },
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": ["node_modules", "build", "test"]
+}
